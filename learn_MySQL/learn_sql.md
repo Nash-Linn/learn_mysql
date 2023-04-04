@@ -734,31 +734,33 @@ alter table emp1 add constraint  fk_emp_dept_id foreign key  (dept_id) reference
 
 
 
+![image-20230404093803264](learn_sql.assets/image-20230404093803264.png)
 
-
-
+![image-20230404094258395](learn_sql.assets/image-20230404094258395.png)
 
 ### 多表查询概述
 
+![image-20230404164602774](learn_sql.assets/image-20230404164602774.png)
 
-
-
+![image-20230404164718064](learn_sql.assets/image-20230404164718064.png)
 
 
 
 ### 内连接
 
+![image-20230404165329919](learn_sql.assets/image-20230404165329919.png)
 
 
 
+![image-20230404170136503](learn_sql.assets/image-20230404170136503.png)
 
-
+![image-20230404170617536](learn_sql.assets/image-20230404170617536.png)
 
 ### 外连接
 
 
 
-
+![image-20230404170958375](learn_sql.assets/image-20230404170958375.png)
 
 
 
