@@ -764,17 +764,191 @@ alter table emp1 add constraint  fk_emp_dept_id foreign key  (dept_id) reference
 
 
 
+![image-20230405191738486](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405191738486.png)
+
+![image-20230405192247221](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405192247221.png)
+
 ### 自连接
 
+![image-20230405192406852](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405192406852.png)
 
+![image-20230405193002557](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405193002557.png)
+
+![image-20230405193122786](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405193122786.png)
+
+
+
+### 联合查询
+
+![image-20230405193245830](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405193245830.png)
+
+
+
+![image-20230405193522064](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405193522064.png)
+
+去掉 all 后 可以实现去重
+
+![image-20230405193657280](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405193657280.png)
+
+![image-20230405193840493](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405193840493.png)
 
 
 
 ### 子查询
 
+![image-20230405194334803](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405194334803.png)
+
+
+
+#### 标量子查询
+
+![image-20230405194608848](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405194608848.png)
+
+
+
+ ![image-20230405195102825](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405195102825.png)
+
+![image-20230405195200386](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405195200386.png)
+
+
+
+![image-20230405195343184](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405195343184.png)
 
 
 
 
-### 多表查询案例
+
+![image-20230405195417002](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405195417002.png)
+
+
+
+#### 列子查询
+
+![image-20230405195536110](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405195536110.png)
+
+![image-20230405200036317](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405200036317.png)
+
+
+
+![image-20230405200132909](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405200132909.png)
+
+
+
+
+
+![image-20230405201207684](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405201207684.png)
+
+ ![image-20230405201306441](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405201306441.png)
+
+
+
+![image-20230405201706021](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405201706021.png)
+
+ 
+
+#### 行子查询
+
+![image-20230405201943942](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405201943942.png)
+
+![image-20230405202938141](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405202938141.png)
+
+![image-20230405203125108](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405203125108.png)
+
+
+
+![image-20230405203153027](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405203153027.png)
+
+
+
+
+
+#### 表子查询
+
+![image-20230405203934167](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405203934167.png)
+
+![image-20230405204439505](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405204439505.png)
+
+![image-20230405215153375](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405215153375.png)
+
+
+
+
+
+### 总结
+
+![image-20230405215806929](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405215806929.png)
+
+
+
+
+
+## 事务
+
+### 事务简介
+
+![image-20230405220726311](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405220726311.png)
+
+
+
+### 事务操作
+
+![image-20230405220829420](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405220829420.png)
+
+![image-20230405221337497](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405221337497.png)
+
+![image-20230405221859175](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405221859175.png)
+
+
+
+![image-20230405222045184](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405222045184.png)
+
+
+
+@@autocommit   1 自动提交  0 手动提交
+
+set @@autocommit = 0 设置为手动提交
+
+
+
+![image-20230405222354798](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405222354798.png)
+
+![image-20230405222405249](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405222405249.png)
+
+
+
+
+
+程序报错
+
+![image-20230405222610821](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405222610821.png)
+
+
+
+![image-20230405223610605](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405223610605.png)
+
+
+
+
+
+
+
+![image-20230405223656064](D:\code\Coding\learn\SQL\learn_mysql\learn_MySQL\learn_sql.assets\image-20230405223656064.png)
+
+
+
+
+
+
+
+
+
+### 事务四大特性
+
+
+
+### 并发事务问题
+
+
+
+### 事务隔离级别
 
