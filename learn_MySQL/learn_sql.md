@@ -950,9 +950,97 @@ set @@autocommit = 0 设置为手动提交
 
 
 
+![image-20230406102009090](learn_sql.assets/image-20230406102009090.png)
+
+
+
 ### 并发事务问题
+
+![image-20230406102926802](learn_sql.assets/image-20230406102926802.png)
+
+![image-20230406103103700](learn_sql.assets/image-20230406103103700.png)
+
+
+
+![image-20230406103251731](learn_sql.assets/image-20230406103251731.png)
+
+
+
+![image-20230406103527584](learn_sql.assets/image-20230406103527584.png)
+
+
+
+
 
 
 
 ### 事务隔离级别
+
+![image-20230406104057886](learn_sql.assets/image-20230406104057886.png)
+
+![image-20230406104434590](learn_sql.assets/image-20230406104434590.png)
+
+![image-20230406104847304](learn_sql.assets/image-20230406104847304.png)
+
+
+
+
+
+#### 脏读
+
+![image-20230406105337274](learn_sql.assets/image-20230406105337274.png)
+
+![image-20230406105258202](learn_sql.assets/image-20230406105258202.png)
+
+
+
+
+
+切换 事务隔离级别 read commited    不可脏读
+
+![image-20230406105440391](learn_sql.assets/image-20230406105440391.png)
+
+
+
+<img src="learn_sql.assets/image-20230406105601036.png" alt="image-20230406105601036"  />![image-20230406105612653](learn_sql.assets/image-20230406105612653.png)
+
+
+
+
+
+####  不可重复读 
+
+![image-20230406111207634](learn_sql.assets/image-20230406111207634.png)
+
+切换 事务隔离级别 repeatable read  可重复读
+
+![image-20230406111639237](learn_sql.assets/image-20230406111639237.png)
+
+在一次事务中 执行相同查询sql 结果一样
+
+
+
+#### 幻读
+
+![image-20230406112351453](learn_sql.assets/image-20230406112351453.png)
+
+![image-20230406112405925](learn_sql.assets/image-20230406112405925.png)
+
+
+
+切换 事务隔离级别 serializable  不可幻读
+
+![image-20230406112821860](learn_sql.assets/image-20230406112821860.png)
+
+![image-20230406112917445](learn_sql.assets/image-20230406112917445.png)
+
+在未进行提交时，其他的事物就很进行等待 等待提交后，才会继续执行sql
+
+
+
+### 总结
+
+![image-20230406142355425](learn_sql.assets/image-20230406142355425.png)
+
+
 
